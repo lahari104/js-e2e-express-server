@@ -11,7 +11,7 @@ pipeline{
     stages{
         stage('clone'){
             steps{
-                git url: 'https://github.com/lahari104/js-e2e-express-server.git'
+                git url: 'https://github.com/lahari104/js-e2e-express-server.git',
                     branch: "${params.Branch_Name}"
             }
         }
